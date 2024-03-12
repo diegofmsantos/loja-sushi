@@ -1,7 +1,7 @@
-import { Products } from "@/types/product";
+import { Product } from "@/types/product";
 
 
-export const products: Products[] = [
+export const products: Product[] = [
     {
         id: 1,
         category: 'sushi',
