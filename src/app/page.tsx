@@ -7,7 +7,7 @@ import { Suspense } from "react";
 const Page = () => {
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto px-3">
       <Header />
       <div>
         <Suspense fallback={<TabsSkeleton />}>

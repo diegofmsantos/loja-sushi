@@ -30,16 +30,16 @@ export const CheckoutDialog = ({ open, onOpenChange }: Props) => {
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent>
+            <DialogContent className="w-72 min-[375px]:w-[340px] min-[425px]:w-[400px] md:w-full">
                 <DialogHeader>
-                    <DialogTitle>
+                    <DialogTitle >
                         {step === 'user' && 'Dados pessoais'}
                         {step === 'adress' && 'Endereço de entrega'}
                         {step === 'finish' && 'Envio para whatsapp'}
                     </DialogTitle>
                 </DialogHeader>
 
-                <Progress value={progressPct} />
+                <Progress value={progressPct} className="" />
 
                 <div className="flex flex-col gap-3">
                     {step === 'user' && <StepUser setStep={setStep} />}
